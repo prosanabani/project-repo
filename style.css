@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins_medium;
+}
+@font-face {
+    font-family: poppins_medium;
+    src: url(assets/Poppins/Poppins-Medium.ttf);
+    
+}
+@font-face {
+    font-family: poppins_thin;
+    src: url(assets/Poppins/Poppins-Light.ttf);
+}
+
+body{
+    /* background-color:rgb(0, 0, 0) ; */
+
+
+    
+}
+.nav-bar{
+    /* background-color: brown;  */
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
+    backdrop-filter: blur(10px);
+    
+}
+
+.container{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10vw;
+
+   
+}
+.nav-bar .container #logo {
+    width: 60px;
+    aspect-ratio: 1;
+    transform: scale3d(0); 
+    transition: 200ms ease-in;
+}
+.nav-bar .container #logo:hover{
+    transform: scale3d(1);
+    width: 70px;
+    aspect-ratio: 1;
+}
+.nav-bar .container .list{
+    /* background-color: aqua; */
+}
+.nav-bar .container .ul-list{
+    display: flex;
+    /* background-color: rgb(65, 45, 41); */
+    list-style: none;
+    margin-top: 1.3rem;
+    text-transform: capitalize;
+    gap: 1.9rem;    
+}
+.nav-bar .container .ul-list #list-item{
+
+}
+.nav-bar .container .ul-list #list-item a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-bar .container .list  .ul-list #list-item:last-child a {
+    background-color: #ff6e42 ;
+    padding: 10px;
+    border-radius: 32px;
+    transition: all 400ms;
+}
+.nav-bar .container .list  .ul-list #list-item:last-child:hover a{
+    background-color: white;
+    color: #ff6e42 ;
+}
+
+.nav-bar .container .ul-list #list-item a::after{
+    background-color:white;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -5px;
+    left: 0;
+    border-radius: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 250ms ease-in;
+    
+
+}
+.nav-bar .container .ul-list #list-item a:hover::after{
+    transform: scaleX(1);
+}
+.nav-bar .container .ul-list #list-item:last-child a::after{
+    display: none;
+}
+
+
+.nav-bar .container #ham-menu{
+    display: none;
+    width: 3rem;
+    aspect-ratio: 1;
+
+
+}
+
+.head-part{
+    width: 100vw ;
+    height: 100vh;
+    background-color:seagreen;
+    /* display: inline-block; */
+    
+}
+
+
+.head-part .img-div{
+    background-image: url(assets/imgs/header.jpg);
+    /* background-color: rgba(0, 0,0, 0.7) ;  */
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: ;
+}
+.overlay .overlay-content{
+    /* background-color: yellow; */
+    margin:  45vh auto 50vh auto;
+    text-align: center;
+    text-transform: capitalize;
+}
+.overlay .overlay-content h3{
+    font-size: 1vw;
+    color: white;
+    letter-spacing: 10px;
+    word-spacing: 13px;
+    font-family: poppins_thin;
+    font-weight: lighter;
+    margin-bottom: -10px;
+}
+.overlay .overlay-content h1{
+    font-size: 4.5vw; 
+    color: white;
+    font-weight: bolder;
+    
+}
+.beta{
+    width: 90px;
+    height: 600px;
+    background-color: black;
+}
+.read_latest_part{
+    background-color: #ff6e42;
+} 
+.read_latest_part .container{
+    background-color: yellow;
+    display: inline;
+
+}
+.read_latest_part .container #title{
+
+}
+.read_latest_part .container .rightpart{
+    background-color: aqua;
+}
+.read_latest_part .container .rightpart img{
+    width: 150px;
+    height: 150px;
+}
+.read_latest_part .container .rightpart p{
+
+}
+.read_latest_part .container .rightpart .entertainmnet_buttons{
+    display: flex;
+    
+    width: 150px;
+    flex-direction: row;
+    background-color: mediumvioletred;
+    gap: 3rem;
+    justify-content: space-between;
+
+
+}
+.read_latest_part .container .rightpart .entertainmnet_buttons .e_button {
+   display:flex;
+
+}
+.read_latest_part .container .rightpart .entertainmnet_buttons .e_button p{
+    font-size: .5rem;
+}
+.read_latest_part .container .rightpart .entertainmnet_buttons .e_button button{
+    background-color: rgb(144, 92, 92);
+    width: 70px;
+    height: 110px;
+}
+.read_latest_part .container .rightpart .entertainmnet_buttons .e_button #like-btn {
+    background-image: url(assets/imgs/thumbs-up.png);
+    width: 50px;
+    aspect-ratio: 1;
+   
+}
+
