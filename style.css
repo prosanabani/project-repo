@@ -135,7 +135,6 @@ body{
     background-color: rgba(0, 0, 0, 0.7);
     width: 100vw;
     height: 100vh;
-    z-index: ;
 }
 .overlay .overlay-content{
     /* background-color: yellow; */
@@ -161,14 +160,19 @@ body{
 .beta{
     width: 90px;
     height: 600px;
-    background-color: black;
+    background-color: rgb(117, 117, 117);
 }
 .read_latest_part{
+    width: 30vw;
+    height: 30vw;
     background-color: #ff6e42;
+
+
 } 
 .read_latest_part .container{
     background-color: yellow;
     display: inline;
+    
 
 }
 .read_latest_part .container #title{
@@ -182,35 +186,44 @@ body{
     height: 150px;
 }
 .read_latest_part .container .rightpart p{
-
+    color: white;
 }
 .read_latest_part .container .rightpart .entertainmnet_buttons{
     display: flex;
-    
-    width: 150px;
     flex-direction: row;
+    width: 140px;
+    
     background-color: mediumvioletred;
-    gap: 3rem;
+    margin: 5px;
     justify-content: space-between;
+
 
 
 }
 .read_latest_part .container .rightpart .entertainmnet_buttons .e_button {
    display:flex;
-
 }
 .read_latest_part .container .rightpart .entertainmnet_buttons .e_button p{
     font-size: .5rem;
 }
 .read_latest_part .container .rightpart .entertainmnet_buttons .e_button button{
-    background-color: rgb(144, 92, 92);
-    width: 70px;
-    height: 110px;
-}
-.read_latest_part .container .rightpart .entertainmnet_buttons .e_button #like-btn {
-    background-image: url(assets/imgs/thumbs-up.png);
-    width: 50px;
+    background-size: cover;
+    border: none;
+    width: 20px;
     aspect-ratio: 1;
+    background-color: transparent;
+}
+.read_latest_part .container .rightpart .entertainmnet_buttons .e_button #like_btn {
+    background-image: url(fontawesome/svgs/regular/thumbs-up.svg);
+    filter: invert(100);
+    
+
+}
+.read_latest_part .container .rightpart .entertainmnet_buttons .e_button #comment_btn {
+    background-image: url(fontawesome/svgs/regular/comment-dots.svg);
+}
+.read_latest_part .container .rightpart .entertainmnet_buttons .e_button #share_btn {
+    background-image: url(fontawesome/svgs/regular/share-square.svg);
    
 }
 
