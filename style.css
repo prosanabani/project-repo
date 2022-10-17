@@ -221,8 +221,8 @@ body{
 
 .content-div{
     background-color: rgb(70, 70, 70);
-    width: 50%;
-    margin-left: 50%;
+    width: 70%;
+    margin-left: 30%;
     padding-left: 10px;
     transition: 0.4s;
 }
@@ -292,8 +292,20 @@ body{
     height: 600px;
     background-color: rgb(117, 117, 117);
 }
+/* /////////////////////////////////////////////////////////////////////////////////// */
+
+.testimonial-part{
+    background-color: brown;
+    display: flex;
+}
+.testimonial-part .testimonial-container{
 
 
+
+}
+.testimonial-part .testimonial-container .page-1{
+    display: flex;
+}
 
 
 
