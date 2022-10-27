@@ -333,7 +333,7 @@ body {
   height: 32rem;
 }
 .testimonial-part .testimonial-container {
-  position: relative;
+  /* position: relative; */
   background-color: rgb(53, 53, 53);
   width: 70%;
   height: calc(100% - 40px);
@@ -348,6 +348,7 @@ body {
   margin-bottom: 20px;
 }
 .testimonial-part .testimonial-container .pages {
+  width: 70%;
   position: absolute;
   display: flex;
   justify-content: space-around;
