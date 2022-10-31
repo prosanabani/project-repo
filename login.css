@@ -122,9 +122,31 @@
   left: -13px;
   background-color: rgb(34, 42, 26);
 }
-.centering-div .form-container .content #button-login,
-#button-register {
+.centering-div .form-container .content #button-register {
+  background-color: white;
   width: 100%;
   border-radius: 10px;
   border: none;
+}
+#button-login-div {
+  background-color: white;
+  /* width: 100%; */
+  /* width: fit-content;
+  margin: auto; */
+  position: relative;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#button-login {
+  border: none;
+  background-color: rgb(214, 20, 20);
+  cursor: pointer;
+  transform: translate(0);
+  transition: ease-in-out 250ms;
+}
+#button-login-div:hover #button-login {
+  /* transform: translateX(50px); */
+  transition: ease-in-out 250ms;
 }
