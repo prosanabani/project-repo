@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login-page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="centering-div">
+      <div class="form-container">
+        <div class="content">
+          <form name="login-form" method="get">
+            <div class="head">
+              <img src="assets/imgs/logo.svg" alt="logo" />
+              <h2 id="title">login form here</h2>
+            </div>
+            <label id="Username">Username</label>
+            <input
+              id="input-username"
+              placeholder="please enter you name"
+              type="text"
+              name="user-name"
+              autocomplete="on"
+            /><br />
+            <label id="Password">Password</label>
+            <input
+              id="input-password"
+              placeholder="please enter your password"
+              type="password"
+              name="password"
+            /><br />
+            <input id="input-checkbox" type="checkbox" />
+            <a href="#">remember me!</a><br /><a href="#">forgot password ?</a>
+            <button id="button-login">login now</button>
+            <div class="or-divide"><span>or</span></div>
+            <button id="button-register">register now</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>

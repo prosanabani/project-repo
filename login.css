@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins_medium;
+}
+
+@font-face {
+  font-family: poppins_medium;
+  src: url(assets/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: poppins_thin;
+  src: url(assets/Poppins/Poppins-Light.ttf);
+}
+.centering-div {
+  background-color: brown;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.centering-div .form-container {
+  width: 500px;
+  aspect-ratio: 1;
+  border: 5px solid black;
+  background-color: gray;
+  /* background-image: url(assets/imgs/branding-5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; */
+}
+
+.centering-div .form-container .content {
+  /* background-color: aqua; */
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.centering-div .form-container .content form {
+  /* background-color: yellow; */
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+.centering-div .form-container .content form > *:not(label, a) {
+  padding: 15px;
+}
+.centering-div .form-container .content .head {
+  /* background-color: yellow; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.centering-div .form-container .content .head::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  color: blue;
+  background-color: black;
+  bottom: -2px;
+}
+
+.centering-div .form-container .content .head img {
+  width: 60px;
+  aspect-ratio: 1;
+}
+.centering-div .form-container .content .head #title {
+  font-family: poppins_thin;
+  text-transform: capitalize;
+  font-size: larger;
+}
+.centering-div .form-container .content #input-username,
+#input-password {
+  width: 100%;
+  padding: 5px;
+  font-family: poppins_thin;
+}
+.centering-div .form-container .content #input-checkbox {
+}
+.centering-div .form-container .content form a {
+  /* background-color: aqua; */
+  font-size: 12px;
+}
+.centering-div .form-container .content form a:hover {
+  opacity: 0.5;
+}
+.centering-div .form-container .content form a:last-of-type {
+  color: red;
+}
+.centering-div .form-container .content .or-divide {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.centering-div .form-container .content .or-divide span {
+  padding: 5px;
+}
+.centering-div .form-container .content .or-divide::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  top: 50%;
+  background-color: rgb(34, 42, 26);
+}
+.centering-div .form-container .content .or-divide::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  top: 50%;
+  left: -13px;
+  background-color: rgb(34, 42, 26);
+}
+.centering-div .form-container .content #button-login,
+#button-register {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+}
