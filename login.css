@@ -131,8 +131,8 @@
 #button-login-div {
   background-color: white;
   /* width: 100%; */
-  /* width: fit-content;
-  margin: auto; */
+  /* width: fit-content; */
+  /* margin: auto; */
   position: relative;
   border-radius: 10px;
   display: flex;
