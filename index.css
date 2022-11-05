@@ -57,7 +57,7 @@ body {
 }
 #nav-bar .container .left-part .user-img i {
   position: absolute;
-  color: blue;
+  color: #ff6e42;
   font-size: 1.6rem;
   right: -20px;
   bottom: 25px;
@@ -66,6 +66,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  border: 2px solid #ff6e42;
 }
 
 #nav-bar .container .list {
@@ -182,20 +183,25 @@ body {
 
 /* /////////////////////////////////////////////////////////////////////////////////// */
 .read_latest_part {
-  width: 90%;
+  width: 100%;
+  /* background-color: #ff6e42; */
   padding: 20px 0;
 }
 
 .read_latest_part .container {
-  background-color: yellow;
+  /* background-color: yellow; */
   display: flex;
-  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+  width: 90%;
 }
 
 .read_latest_part #title {
   color: white;
   text-align: center;
   text-transform: capitalize;
+  padding: 20px 0;
 }
 
 .read_latest_part .container .rightpart {
@@ -352,11 +358,12 @@ body {
 
 /* /////////////////////////////////////////////////////////////////////////////////// */
 .testimonial-part {
+  margin-top: 4rem;
   display: flex;
   height: 32rem;
 }
-.testimonial-part .testimonial-container {
-  /* position: relative; */
+.testimonial-part #testimonial-container {
+  position: relative;
   background-color: rgb(53, 53, 53);
   width: 70%;
   height: calc(100% - 40px);
@@ -370,8 +377,8 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.testimonial-part .testimonial-container .pages {
-  width: 70%;
+.testimonial-part #testimonial-container .pages {
+  /* width: 70%; */
   position: absolute;
   display: flex;
   justify-content: space-around;
@@ -379,7 +386,7 @@ body {
   margin-top: 50px;
   /* background-color: rgb(39, 193, 157); */
 }
-.testimonial-part .testimonial-container .pages .content {
+.testimonial-part #testimonial-container .pages .content {
   position: relative;
   background-color: rgb(53, 53, 53);
   width: 40%;
@@ -394,13 +401,12 @@ body {
   color: white;
 }
 
-.testimonial-part .testimonial-container .pages .content#one {
+.testimonial-part #testimonial-container .pages .content#one {
   /* background-color: aqua; */
 }
-.testimonial-part .testimonial-container .pages .content#two {
-  /* background-color: blue; */
+.testimonial-part #testimonial-container .pages .content#two {
 }
-.testimonial-part .testimonial-container .pages .content .person-img-div {
+.testimonial-part #testimonial-container .pages .content .person-img-div {
   position: absolute;
   width: 120px;
   aspect-ratio: 1;
@@ -411,18 +417,18 @@ body {
   border: 2px solid #ff6e42;
   border-radius: 60px;
 }
-.testimonial-part .testimonial-container .pages .content#one .person-img-div {
+.testimonial-part #testimonial-container .pages .content#one .person-img-div {
   background-image: url(assets/imgs/tett1.png);
 }
-.testimonial-part .testimonial-container .pages .content#two .person-img-div {
+.testimonial-part #testimonial-container .pages .content#two .person-img-div {
   background-image: url(assets/imgs/tett2.png);
 }
-.testimonial-part .testimonial-container .pages .content h3 {
+.testimonial-part #testimonial-container .pages .content h3 {
   margin-top: 60px;
   text-transform: capitalize;
 }
 
-.testimonial-part .testimonial-container .pages .content p {
+.testimonial-part #testimonial-container .pages .content p {
   font-family: poppins_thin;
   font-weight: 100;
   font-size: large;
@@ -430,22 +436,23 @@ body {
   line-height: 30px;
 }
 /* ///////////// */
-.testimonial-part .testimonial-title-nav {
+.testimonial-part #testimonial-title-nav {
   /* background-color: yellow; */
   width: 30%;
+  z-index: 99999;
 }
-.testimonial-part .testimonial-title-nav #title {
+.testimonial-part #testimonial-title-nav #title {
   text-align: center;
   margin-top: 20vh;
 }
 
-.testimonial-part .testimonial-title-nav .buttons {
+.testimonial-part #testimonial-title-nav .buttons {
   /* background-color: turquoise; */
   text-align: center;
   margin: 10vh auto;
 }
 
-.testimonial-part .testimonial-title-nav .navigation-button {
+.testimonial-part #testimonial-title-nav .navigation-button {
   width: 5rem;
   aspect-ratio: 1;
   border: none;
@@ -455,13 +462,13 @@ body {
   cursor: pointer;
   margin: 7px;
 }
-.testimonial-part .testimonial-title-nav .navigation-button i {
+.testimonial-part #testimonial-title-nav .navigation-button i {
   font-size: 2em;
 }
 
-.testimonial-part .testimonial-title-nav .navigation-button #left {
+.testimonial-part #testimonial-title-nav .navigation-button #left {
 }
-.testimonial-part .testimonial-title-nav .navigation-button #right {
+.testimonial-part #testimonial-title-nav .navigation-button #right {
 }
 .beta {
   width: 90px;
