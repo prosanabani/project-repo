@@ -55,7 +55,7 @@ nextButton.addEventListener('click', e => {
     let amountToMove = nextSLide.style.left;
 
     //action moving the slide
-    track.style.transform = 'Translatex(' + amountToMove + ')';
+    track.style.transform = 'TranslateX(' + amountToMove + ')';
 })
 
 function slide_test() {
