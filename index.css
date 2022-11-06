@@ -361,12 +361,15 @@ body {
   margin-top: 4rem;
   display: flex;
   height: 32rem;
+  position: relative;
+
 }
 .testimonial-part #testimonial-container {
   position: relative;
   background-color: rgb(53, 53, 53);
   width: 70%;
-  height: calc(100% - 40px);
+  /* height: calc(100% - 40px); */
+  height: 100%;
   /* border: 2px solid black; */
   border-radius: 10px;
   display: flex;
@@ -376,9 +379,10 @@ body {
   margin: 0 20px;
   margin-top: 20px;
   margin-bottom: 20px;
+  transition: 450ms ease-in;
 }
 .testimonial-part #testimonial-container .pages {
-  /* width: 70%; */
+  width: 100%;
   position: absolute;
   display: flex;
   justify-content: space-around;

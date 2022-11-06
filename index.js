@@ -38,7 +38,6 @@ function change_nav_color() {
 ////////////////////// sliding the testimanial div///////////////////////////////////////
 let slide_width = slides[0].getBoundingClientRect().width;
 //alligning slides left to each other
-
 //function for alligning the slides
 let setSlidePosition = (slide, index) => {
     slide.style.left = slide_width * index + "px";
@@ -53,9 +52,16 @@ nextButton.addEventListener('click', e => {
     let nextSLide = currentSlide.nextElementSibling;
     //amount to move
     let amountToMove = nextSLide.style.left;
-
     //action moving the slide
-    track.style.transform = 'TranslateX(' + amountToMove + ')';
+    track.style.transform = 'translateX( -' + amountToMove + ')';
+})
+prevButton.addEventListener('click', e => {
+    const currentSlide = track.querySelector(".currentSlide")
+    let nextSLide = currentSlide.nextElementSibling;
+    //amount to move
+    let amountToMove = nextSLide.style.left;
+    //action moving the slide
+    track.style.transform = 'translateX( ' + amountToMove + ')';
 })
 
 function slide_test() {
