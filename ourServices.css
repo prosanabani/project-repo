@@ -24,10 +24,12 @@
     height: 10rem;
 }
 .left-circle{
+  
     width: 35vw;
     aspect-ratio: 1;
     border-radius :50%; ;
     background-color: yellow;
+    color: black;
     position: absolute;
     right: 35vw;
 }
