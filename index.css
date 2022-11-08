@@ -443,7 +443,7 @@ body {
 .testimonial-part #testimonial-title-nav {
   /* background-color: yellow; */
   width: 30%;
-  z-index: 99999;
+  /* z-index: ; */
 }
 .testimonial-part #testimonial-title-nav #title {
   text-align: center;
