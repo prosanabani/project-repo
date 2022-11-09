@@ -14,16 +14,20 @@
   font-family: poppins_thin;
   src: url(assets/Poppins/Poppins-Light.ttf);
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   background-color: hsl(0, 0%, 70%);
 }
 /* #ff6e42 */
 #nav-bar {
   position: fixed;
-  width: 100vw;
+  width:100vw;
   z-index: 1;
   transition: 450ms ease-in-out;
+  
+  
 }
 
 #nav-bar .container {
@@ -474,7 +478,7 @@ body {
 }
 .testimonial-part #testimonial-title-nav .navigation-button #right {
 }
-.beta {
+#beta {
   width: 90px;
   height: 1600px;
   background-color: rgb(117, 117, 117);
