@@ -21,6 +21,40 @@ body {
   background-color: hsl(0, 0%, 70%);
 }
 /* #ff6e42 */
+/* <i class="fa-solid fa-toggle-on"></i> */
+
+/* inhereited selectors attributes */
+.title{
+  /* background-color: rebeccapurple; */
+  width: fit-content;
+  margin: auto;
+}
+#title-content{
+  text-align: center;
+  margin: 20px 0;
+  text-transform: capitalize;
+  color: white;
+  position: relative;
+}
+#title-content::after{
+  content: '';
+  background-color:#ff6e42 ;
+  width:100%;
+  height: 5px;
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  transform: scaleX(0);
+  transition: 800ms ease-in-out;
+}
+
+
+
+
+/* inhereted selectors attributes end */
+
 #nav-bar {
   position: fixed;
   width:100vw;
@@ -31,14 +65,16 @@ body {
 }
 
 #nav-bar .container {
-  /* background-color: transparent; */
+  /* background-color: slateblue; */
   display: flex;
   justify-content: space-between;
   margin: 20px 10vw;
 }
 #nav-bar .container .left-part {
+  position: relative;
   display: flex;
   gap: 2rem;
+  background-color: rgb(22, 42, 60);
 }
 #nav-bar .container .left-part #logo {
   width: 60px;
@@ -46,12 +82,11 @@ body {
   transform: scale3d(0);
   transition: 200ms ease-in;
 }
-
-#nav-bar .container .left-part #logo:hover {
+/* #nav-bar .container .left-part #logo:hover {
   transform: scale3d(1);
   width: 70px;
   aspect-ratio: 1;
-}
+} */
 #nav-bar .container .left-part .user-img {
   position: relative;
   /* background-color: #f9f9f9; */
@@ -59,12 +94,34 @@ body {
   /* height: 60px; */
   display: flex;
 }
-#nav-bar .container .left-part .user-img i {
+#nav-bar .container .left-part .user-img #user-btn {
   position: absolute;
   color: #ff6e42;
   font-size: 1.6rem;
   right: -20px;
-  bottom: 25px;
+  bottom: 0;
+  /* background-color:blue; */
+}
+#nav-bar .container .left-part .user-img #user-btn::after{
+  content: '';
+  z-index: -1;
+  background-color: gray;
+  width: 16px;
+  height: 218px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  /* design */
+  border-bottom-right-radius:10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  /* animation */
+  transform: scaleY(0);
+  transition: 500ms ease;
+  transform-origin: top;
+}
+#nav-bar .container .left-part:hover .user-img #user-btn::after{
+  transform: scaleY(1);
 }
 #nav-bar .container .left-part #user-image {
   width: 60px;
@@ -72,19 +129,53 @@ body {
   border-radius: 50%;
   border: 2px solid #ff6e42;
 }
+/* /////////////////////////////////// */
 
+#nav-bar .container .left-part .user-drop{
+  background-color: gray;
+  position: absolute;
+  right: -4px;
+  bottom: -192px;
+  /* design */
+  border-top-left-radius:10px ;
+  border-bottom-left-radius:10px;
+  /* animation */
+  transform: scaleX(0);
+  transition: 250ms 500ms ease ;
+  transform-origin: right;
+} 
+#nav-bar .container .left-part:hover .user-drop{
+  transform: scaleX(1);
+}
+#nav-bar .container .left-part .drop-ul{
+  /* background-color: rgb(30, 152, 53); */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  gap: 20px;
+}
+#nav-bar .container .left-part .drop-li{
+  /* background-color: tan; */
+}
+#nav-bar .container .left-part .drop-a{
+  text-decoration: none;
+  color: #ff6e42;
+} 
+
+
+/* ///////////////////////////////////////////////// */
 #nav-bar .container .list {
   /* background-color: aqua; */
-}
-.user-privilage {
-  display: none;
 }
 #nav-bar .container .ul-list {
   display: flex;
   /* background-color: rgb(65, 45, 41); */
   list-style: none;
-  margin-top: 1.3rem;
   text-transform: capitalize;
+  margin-top: 1.3rem;
   gap: 1.9rem;
 }
 
@@ -200,12 +291,8 @@ body {
   margin: auto;
   width: 90%;
 }
-
-.read_latest_part #title {
-  color: white;
-  text-align: center;
-  text-transform: capitalize;
-  padding: 20px 0;
+.read_latest_part:hover .title #title-content::after{
+  transform: scaleX(1);
 }
 
 .read_latest_part .container .rightpart {
@@ -449,9 +536,8 @@ body {
   width: 30%;
   /* z-index: ; */
 }
-.testimonial-part #testimonial-title-nav #title {
-  text-align: center;
-  margin-top: 20vh;
+.testimonial-part:hover .title #title-content::after{
+  transform: scaleX(1);
 }
 
 .testimonial-part #testimonial-title-nav .buttons {

@@ -18,14 +18,24 @@
         <a href="#"><img id="logo" src="assets/imgs/logo.svg" alt="" /></a>
         <div class="user-img">
           <img id="user-image" src="assets/imgs/avatar.jpg" />
-          <i class="fa-solid fa-caret-down"></i>
+          <i id="user-btn" class="fa-solid fa-caret-down"></i>
+        </div>
+        <div class="user-drop">
+          <ul class="drop-ul">
+            <li class="drop-li"><a class="drop-a" href="#">logout</a></li>
+            <li class="drop-li">
+              <a class="drop-a" href="#">
+                <i class="fa-solid fa-toggle-off"></i>
+                <span>dark-mode</span>
+              </a>
+            </li>
+            <li class="drop-li"><a class="drop-a" href="#">owner's page</a></li>
+            <li class="drop-li"><a class="drop-a" href="#">login</a></li>
+          </ul>
         </div>
       </div>
       <div class="list">
         <ul class="ul-list">
-          <li id="list-item" class="user-privilage">
-            <a href="#" class="list-item-a">dashborad</a>
-          </li>
           <li id="list-item">
             <a href="#beta" class="list-item-a">our service</a>
           </li>
@@ -62,7 +72,9 @@
   </div>
   <!-- //////////////////////////////////// -->
   <div class="read_latest_part">
-    <h1 id="title">Read our latest news</h1>
+    <div class="title">
+      <h1 id="title-content">read our latest part</h1>
+    </div>
     <div class="container">
       <div class="rightpart">
         <div class="image-div-1"></div>
@@ -199,7 +211,9 @@
       </div>
     </div>
     <div id="testimonial-title-nav">
-      <h1 id="title">Testimonials</h1>
+      <div class="title">
+        <h1 id="title-content">testimonials</h1>
+      </div>
       <div class="buttons">
         <button class="navigation-button" id="left">
           <i class="fa fa-angle-left"></i>
