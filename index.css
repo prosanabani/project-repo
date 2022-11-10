@@ -296,14 +296,14 @@ body {
 /* /////////////////////////////////////////////////////////////////////////////////// */
 .read_latest_part {
   width: 100%;
-  /* background-color: #ff6e42; */
+  background-color: #3e2f2b;
   padding: 20px 0;
 }
 
 .read_latest_part .container {
-  /* background-color: yellow; */
+  background-color: yellow;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: auto;
   width: 90%;
@@ -311,123 +311,6 @@ body {
 
 .read_latest_part:hover .title #title-content::after {
   transform: scaleX(1);
-}
-
-.read_latest_part .container .rightpart {
-  /* background-color: aqua; */
-  /* margin: 50px 40px; */
-  width: 50%;
-}
-
-/* //////////////////////////////hovering above right-part///////////////////////////// */
-.read_latest_part .container .rightpart:hover .content-div {
-  background-color: black;
-}
-
-.read_latest_part .container .rightpart:hover .image-div-1 {
-  background-color: black;
-}
-
-.read_latest_part .container .rightpart:hover .image-div-2 {
-  background-color: black;
-}
-
-.image-div-1 {
-  margin-left: -30px;
-  width: calc(100% + 30px);
-  height: 35vw;
-  background-image: url(assets/imgs/about-1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgb(70, 70, 70);
-  transition: 0.4s;
-}
-
-.image-div-2 {
-  margin-left: -30px;
-  width: calc(100% + 30px);
-  height: 35vw;
-  background-image: url(assets/imgs/about-2.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: rgb(70, 70, 70);
-
-  transition: 0.4s;
-}
-
-.content-div {
-  background-color: rgb(70, 70, 70);
-  width: 70%;
-  margin-left: 30%;
-  padding-left: 10px;
-  transition: 0.4s;
-}
-
-.content-div>* {
-  color: white;
-}
-
-.read_latest_part .container .rightpart #post-by {
-  text-transform: capitalize;
-  padding-top: 20px;
-  padding-bottom: 5px;
-  font-size: 15px;
-  font-family: poppins_thin;
-}
-
-.read_latest_part .container .rightpart .content-div .entertainmnet_buttons {
-  width: 100%;
-  /* background-color: mediumvioletred; */
-}
-
-.read_latest_part .container .rightpart .content-div .entertainmnet_buttons ul {
-  display: flex;
-  list-style: none;
-  /* background-color: black; */
-  align-items: center;
-}
-
-.read_latest_part .container .rightpart .content-div .entertainmnet_buttons ul li {
-  font-size: 0.8rem;
-  padding-right: 0.5rem;
-}
-
-.read_latest_part .container .rightpart .content-div .entertainmnet_buttons ul li a {
-  text-decoration: none;
-  text-transform: capitalize;
-  color: white;
-  font-family: poppins_thin;
-  transition: 0.3s;
-}
-
-.read_latest_part .container .rightpart .content-div .entertainmnet_buttons ul li i {
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 20px;
-  color: white;
-  transition: 0.3s;
-}
-
-.read_latest_part .container .rightpart .content-div h3 {
-  /* padding-top: 20px; */
-  text-transform: capitalize;
-  font-weight: 1000;
-  font-size: 25px;
-}
-
-.read_latest_part .container .rightpart .content-div p {
-  font-size: 15px;
-  font-family: poppins_thin;
-}
-
-/* //////////////////////////////hovering above entertainment-buttons///////////////////////////// */
-
-.read_latest_part .container .rightpart .content-div .entertainmnet_buttons ul li:hover a {
-  color: #ff6e42;
-}
-
-.read_latest_part .container .rightpart .content-div .entertainmnet_buttons ul li:hover a>* {
-  color: #ff6e42;
 }
 
 /* /////////////////////////////////////////////////////////////////////////////////// */
