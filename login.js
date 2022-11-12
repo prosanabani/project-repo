@@ -9,6 +9,9 @@ function checkinputs(a, b) {
     if (a.value == "" || b.value == "") return 1;
     else return 0;
 }
+// ///////////////////////////////////////
+
+
 var place_x = 0;
 var place_y = 0;
 let perviousTextContent = login_now.innerText;
