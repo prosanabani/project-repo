@@ -310,9 +310,22 @@ body {
   width: 90%;
 }
 
-.read_latest_part .container .cell {}
+.read_latest_part .container .cell {
+  background-color: blue;
+}
 
-.read_latest_part .container .cell .img {}
+.read_latest_part .container .cell .img {
+  background-color: teal;
+  width: fit-content;
+  margin: 0 auto;
+
+}
+
+.read_latest_part .container .cell .img img {
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
 
 .read_latest_part .container .cell .content {}
 
@@ -329,6 +342,11 @@ body {
 
 .read_latest_part .container .cell .content .activity li {}
 
+.read_latest_part .container .cell .content .activity li span {
+  color: #ff6e42;
+  margin-right: 3px;
+}
+
 .read_latest_part .container .cell .content .activity a {
   text-decoration: none;
   color: #ff6e42;
@@ -338,7 +356,27 @@ body {
   margin-right: 5px;
 }
 
-.read_latest_part .container .cell .content .comment-div {}
+.read_latest_part .container .cell .content .previous-comments {
+  background-color: black;
+
+}
+
+#comment-img {
+  width: 20px;
+  aspect-ratio: 1;
+}
+
+.read_latest_part .container .cell .content .comment-div #comment-input {
+  border: 2px solid black;
+}
+
+.read_latest_part .container .cell .content .comment-div button {
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+
+
 
 .read_latest_part:hover .title #title-content::after {
   transform: scaleX(1);
@@ -423,6 +461,7 @@ body {
   aspect-ratio: 1;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   top: -60px;
   left: 30px;
   border: 2px solid #ff6e42;
@@ -430,7 +469,7 @@ body {
 }
 
 .testimonial-part #testimonial-container .pages .content#one .person-img-div {
-  background-image: url(assets/imgs/tett1.png);
+  background-image: url(assets/imgs/avatar-3.jpg);
 }
 
 .testimonial-part #testimonial-container .pages .content#two .person-img-div {
